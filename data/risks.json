@@ -1,0 +1,107 @@
+[
+  {
+    "id": "RSK-001",
+    "title": "Nested repository review evidence drifts out of sync",
+    "owner": "Program Integration Lead",
+    "review_gate": "SRR",
+    "status": "mitigating",
+    "severity": 8,
+    "likelihood": 6,
+    "detection": 5,
+    "residual_likelihood": 3,
+    "residual_detection": 3,
+    "workstream_refs": [
+      "systems-engineering-traceability-lab",
+      "verification-readiness-dashboard",
+      "autonomous-disaster-response-digital-thread"
+    ],
+    "mitigation_actions": [
+      "Automate summary exports",
+      "Add program-level manifest validation",
+      "Review generated outputs before release"
+    ]
+  },
+  {
+    "id": "RSK-002",
+    "title": "Interface assumptions diverge across subsystem repos",
+    "owner": "Chief Systems Engineer",
+    "review_gate": "PDR",
+    "status": "open",
+    "severity": 9,
+    "likelihood": 5,
+    "detection": 6,
+    "residual_likelihood": 4,
+    "residual_detection": 4,
+    "workstream_refs": [
+      "interface-control-toolkit",
+      "trade-study-engine",
+      "autonomous-disaster-response-digital-thread"
+    ],
+    "mitigation_actions": [
+      "Add interface change review board",
+      "Trace interface assumptions into trade studies"
+    ]
+  },
+  {
+    "id": "RSK-003",
+    "title": "Reliability actions are not reflected in readiness status",
+    "owner": "Verification Manager",
+    "review_gate": "TRR",
+    "status": "mitigating",
+    "severity": 7,
+    "likelihood": 6,
+    "detection": 5,
+    "residual_likelihood": 3,
+    "residual_detection": 3,
+    "workstream_refs": [
+      "fmea-reliability-workbench",
+      "verification-readiness-dashboard",
+      "program-risk-board"
+    ],
+    "mitigation_actions": [
+      "Publish a risk-to-verification review list",
+      "Align open critical risks with readiness dashboard owners"
+    ]
+  },
+  {
+    "id": "RSK-004",
+    "title": "Mission analysis assumptions do not match operational timelines",
+    "owner": "Mission Analysis Lead",
+    "review_gate": "MDR",
+    "status": "watch",
+    "severity": 8,
+    "likelihood": 4,
+    "detection": 5,
+    "residual_likelihood": 2,
+    "residual_detection": 4,
+    "workstream_refs": [
+      "satellite-power-budget-simulator",
+      "ops-concept-simulator"
+    ],
+    "mitigation_actions": [
+      "Run scenario reviews against power assumptions",
+      "Tag scenario-level margin excursions"
+    ]
+  },
+  {
+    "id": "RSK-005",
+    "title": "Program office loses track of nested submodule health",
+    "owner": "Configuration Manager",
+    "review_gate": "PRR",
+    "status": "open",
+    "severity": 8,
+    "likelihood": 5,
+    "detection": 7,
+    "residual_likelihood": 3,
+    "residual_detection": 4,
+    "workstream_refs": [
+      "autonomous-disaster-response-program-office",
+      "autonomous-disaster-response-digital-thread",
+      "program-risk-board"
+    ],
+    "mitigation_actions": [
+      "Validate .gitmodules declarations",
+      "Track hub health in a master dashboard"
+    ]
+  }
+]

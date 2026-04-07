@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Program Risk Board</title>
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --panel: rgba(255,255,255,0.9);
+      --ink: #2e241f;
+      --muted: #73645b;
+      --accent: #b45309;
+      --line: rgba(46,36,31,0.12);
+      --shadow: 0 18px 40px rgba(65, 46, 24, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top left, #f7f2eb, #ece3d7 48%, #e6d8c7 100%);
+    }
+    main {
+      width: min(1100px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 28px 0 54px;
+    }
+    .hero, section, .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      border-radius: 24px;
+    }
+    .hero {
+      padding: 28px;
+      background: linear-gradient(135deg, rgba(180,83,9,0.95), rgba(146,64,14,0.95));
+      color: #fffdf8;
+    }
+    h1, h2 {
+      margin: 0 0 12px;
+      font-family: "Georgia", serif;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 18px 0;
+    }
+    .card {
+      padding: 20px;
+      min-height: 116px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card span {
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: 0.84rem;
+      letter-spacing: 0.07em;
+    }
+    .card strong {
+      color: var(--accent);
+      font-size: 1.9rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+    }
+    section {
+      padding: 22px;
+      overflow: hidden;
+    }
+    .wide {
+      grid-column: 1 / -1;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.94rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>Program Risk Board</h1>
+      <p>Program-level risk review workspace for a systems engineering portfolio. The board highlights residual exposure across workstreams and review gates.</p>
+    </section>
+    <div class="metrics"><article class="card"><span>Risks</span><strong>5</strong></article>
+<article class="card"><span>Open</span><strong>2</strong></article>
+<article class="card"><span>Critical Residual</span><strong>0</strong></article>
+<article class="card"><span>Review Gates</span><strong>5</strong></article></div>
+    <div class="grid">
+      <section class="wide">
+        <h2>Risk Register</h2>
+        <table><thead><tr><th>id</th><th>title</th><th>owner</th><th>review gate</th><th>status</th><th>residual rpn</th></tr></thead><tbody><tr><td>RSK-001</td><td>Nested repository review evidence drifts out of sync</td><td>Program Integration Lead</td><td>SRR</td><td>mitigating</td><td>72</td></tr><tr><td>RSK-002</td><td>Interface assumptions diverge across subsystem repos</td><td>Chief Systems Engineer</td><td>PDR</td><td>open</td><td>144</td></tr><tr><td>RSK-003</td><td>Reliability actions are not reflected in readiness status</td><td>Verification Manager</td><td>TRR</td><td>mitigating</td><td>63</td></tr><tr><td>RSK-004</td><td>Mission analysis assumptions do not match operational timelines</td><td>Mission Analysis Lead</td><td>MDR</td><td>watch</td><td>64</td></tr><tr><td>RSK-005</td><td>Program office loses track of nested submodule health</td><td>Configuration Manager</td><td>PRR</td><td>open</td><td>96</td></tr></tbody></table>
+      </section>
+      <section>
+        <h2>Review Gate Rollup</h2>
+        <table><thead><tr><th>review gate</th><th>risk count</th><th>max residual rpn</th><th>average residual rpn</th></tr></thead><tbody><tr><td>MDR</td><td>1</td><td>64</td><td>64.0</td></tr><tr><td>PDR</td><td>1</td><td>144</td><td>144.0</td></tr><tr><td>PRR</td><td>1</td><td>96</td><td>96.0</td></tr><tr><td>SRR</td><td>1</td><td>72</td><td>72.0</td></tr><tr><td>TRR</td><td>1</td><td>63</td><td>63.0</td></tr></tbody></table>
+      </section>
+      <section>
+        <h2>Warnings</h2>
+        <ul><li>None</li></ul>
+      </section>
+      <section class="wide">
+        <h2>Errors</h2>
+        <ul><li>None</li></ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,6 @@
+review_gate,risk_count,max_residual_rpn,average_residual_rpn
+MDR,1,64,64.0
+PDR,1,144,144.0
+PRR,1,96,96.0
+SRR,1,72,72.0
+TRR,1,63,63.0

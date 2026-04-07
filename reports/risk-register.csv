@@ -1,0 +1,6 @@
+id,title,owner,review_gate,status,initial_rpn,residual_rpn,workstream_refs,mitigation_count
+RSK-001,Nested repository review evidence drifts out of sync,Program Integration Lead,SRR,mitigating,240,72,systems-engineering-traceability-lab; verification-readiness-dashboard; autonomous-disaster-response-digital-thread,3
+RSK-002,Interface assumptions diverge across subsystem repos,Chief Systems Engineer,PDR,open,270,144,interface-control-toolkit; trade-study-engine; autonomous-disaster-response-digital-thread,2
+RSK-003,Reliability actions are not reflected in readiness status,Verification Manager,TRR,mitigating,210,63,fmea-reliability-workbench; verification-readiness-dashboard; program-risk-board,2
+RSK-004,Mission analysis assumptions do not match operational timelines,Mission Analysis Lead,MDR,watch,160,64,satellite-power-budget-simulator; ops-concept-simulator,2
+RSK-005,Program office loses track of nested submodule health,Configuration Manager,PRR,open,280,96,autonomous-disaster-response-program-office; autonomous-disaster-response-digital-thread; program-risk-board,2

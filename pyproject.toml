@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "program-risk-board"
+version = "0.1.0"
+description = "Program-level risk review workspace for systems engineering portfolios."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+authors = [
+  { name = "Akif" }
+]
+keywords = [
+  "systems-engineering",
+  "risk-management",
+  "mission-assurance",
+  "portfolio"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+program-risk-board = "program_risk_board.cli:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
