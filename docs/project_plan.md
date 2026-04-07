@@ -36,4 +36,4 @@
 - [x] create a realistic program-level dataset
 - [x] implement validation and export logic
 - [x] add regression tests
-- [ ] publish the repository
+- [x] publish the repository
